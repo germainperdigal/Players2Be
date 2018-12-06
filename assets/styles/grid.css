@@ -28,6 +28,14 @@
     width: 50%;
 }
 
+.col-third {
+    height: 100px;
+    width: calc(calc(100% - 9px)/3);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
 .col-60 {
     width: 60%;
 }
