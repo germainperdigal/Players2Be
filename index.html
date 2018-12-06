@@ -1,219 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Players 2 Be</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <style>
-
-        @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-        html, body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
-            height: 100%;
-        }
-
-        .jumbotron {
-            height: 99%;
-            width: 100%;
-            background-image: url('assets/img/jumbotron.png');
-            -webkit-background-size: 100% 100%;
-            background-size: 100% 100%;
-        }
-
-        .jumbotron .logo {
-            height: 56px;
-            width: 549px;
-            left: calc(50% - calc(549px/2));
-            position: absolute;
-            top: calc(35% - 28px);
-            background: url('assets/img/logo.png');
-            background-size: 100% 100%;
-        }
-
-
-        header {
-            width: 1080px;
-            height: 80px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        header .log {
-            position: absolute;
-            top: 16px;
-            left: 5%;
-            height: 46px;
-            width: 20%;
-            float: left;
-            background-image: url('assets/img/log.png');
-            background-position: center;
-            background-size: 76px 46px;
-            background-repeat: no-repeat;
-        }
-
-        .jumbotron .catchphrase {
-            color: white;
-            font-size: 15px;
-            font-weight: bold;
-            text-transform: uppercase;
-            position: absolute;
-            top: calc(35% + 65px);
-            text-align: center;
-        }
-
-        .center {
-            left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .jumbotron .tryit {
-            background-color: #75B84E;
-            border-color: #75B84E;
-            color: white;
-            width: 200px;
-            font-weight: bold;
-            height: 50px;
-            line-height: 45px;
-            border-radius: 10px;
-            position: absolute;
-            top: calc(35% + 125px);
-        }
-
-        .nav ul {
-            width: 75%;
-            padding: 0;
-            margin: 0;
-            position: absolute;
-            right: 0;
-            float: right;
-            list-style-type: none;
-        }
-
-        .nav li {
-            text-transform: uppercase;
-            font-weight: bold;
-            width: calc(75%/5);
-            display: inline-block;
-            height: 75px;
-            line-height: 75px;
-            color: white;
-            text-align: center;
-        }
-
-        .nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .nav ul li a:nth-child(5) {
-            color: #75B84E;
-        }
-
-        .nav li:nth-child(4) {
-            border-right: 1px solid #75B84E;
-            height: 20px;
-            line-height: 20px;
-        }
-
-        .container {
-            width: 1080px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            height: auto;
-            overflow: auto;
-        }
-
-        .where {
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            height: 500px;
-            background-image: url('assets/img/map.png');
-            background-size: 100% 100%;
-        }
-
-        .col-10 {
-            width: 10%;
-        }
-
-        .col-20 {
-            width: 20%;
-        }
-
-        .col-30 {
-            width: 30%;
-        }
-
-        .col-40 {
-            width: 40%;
-        }
-
-        .col-50 {
-            width: 50%;
-        }
-
-        .col-60 {
-            width: 60%;
-        }
-
-        .col-70 {
-            width: 70%;
-        }
-
-        .col-80 {
-            width: 80%;
-        }
-
-        .right {
-            float: right;
-        }
-
-        .left {
-            float: left;
-        }
-
-        .try {
-            width: 100%;
-            height: 110%;
-            background-image: url('assets/img/medium.png');
-            background-position: center;
-            background-size: 100% 100%;
-        }
-
-        .illustration {
-            width: 95%;
-            margin-top: 20px;
-            height: 510px;
-            background-image: url('assets/img/illu.png');
-            background-size: 100% 100%;
-        }
-
-        @keyframes shake {
-            10%, 90% {
-                transform: translate3d(-1px, 0, 0);
-            }
-
-            20%, 80% {
-                transform: translate3d(2px, 0, 0);
-            }
-
-            30%, 50%, 70% {
-                transform: translate3d(-4px, 0, 0);
-            }
-
-            40%, 60% {
-                transform: translate3d(4px, 0, 0);
-            }
-        }
-
-    </style>
+    <title>Players 2 Be - Accueil</title>
+    <link rel="stylesheet" href="assets/styles/master.css">
+    <link rel="stylesheet" href="assets/styles/grid.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -230,46 +22,69 @@
             </ul>
         </div>
     </header>
-    <div class="logo"></div>
-    <div class="catchphrase center">Envie de devenir footballeur professionnel ?</div>
-    <button class="tryit center">TENTEZ VOTRE CHANCE</button>
+    <div class="logo" data-aos-once="true" data-aos="zoom-in"></div>
+    <div class="catchphrase center" data-aos="fade-down" data-aos-once="true" data-aos="fade-down"
+         data-aos-delay="1100">Envie de devenir footballeur professionnel ?
+    </div>
+    <button class="tryit center" data-aos="fade-down" data-aos-once="true" data-aos-delay="2000">TENTEZ VOTRE CHANCE
+    </button>
+    <div class="mouse--icon center"></div>
+    <div class="more--icon center"></div>
 </div>
 
-    <div class="container">
-        <div class="col-40 left">
-            <div class="illustration"></div>
-        </div>
-        <div class="col-60 right">
-            <h1 style="text-align: left;">A propos de <br /> Players2be</h1>
-            <div style="text-align: left; font-size: 1.2em; width: 80%; padding-bottom: 20px; ">
-                Players2be est une plateforme de mise en relation entre les joueurs
-                et les recruteurs de clubs. Players2be reconnu en France , depuis son ouverture en 2018.
-                Peu importe l'endroit où vous vous trouver dans le monde, notre réseau nous permet d'être proche de vous et
-                d'envoyer un recruteur vous observer et prendre contact avec vous.
-                Vous rêvez du PSG, du Réal Madrid ou encore de Manchester United, postez vos vidéos sur Facebook, Instagram ou Youtube,
-                remplissez le formulaire en bas de page et nous nous occupons du reste.
-                <p>Tentez de faire votre vie un rêve !</p>
-            </div>
-            <span style="height: 30px; width: 30px; padding: 10px; font-weight: bold; font-size: 0.8em; color: #75B84E; border: 2px solid #75B84E; border-radius: 5px;">FR</span>
-            <span style="height: 30px; margin-left: 15px; width: 30px; padding: 10px; font-weight: bold; font-size: 0.8em; color: #75B84E; border: 2px solid #75B84E; border-radius: 5px;">EN</span>
-        </div>
+<div class="container">
+    <div class="col-40 left">
+        <div class="illustration" data-aos="fade-right" data-aos-offset="500" data-aos-once="true"
+             data-aos-easing="ease-in-sine"></div>
     </div>
+    <div class="col-60 right" data-aos="fade-left" data-aos-offset="500" data-aos-mirror="false"
+         data-aos-easing="ease-in-sine">
+        <h1 class="about" id="aboutHead" style="text-align: left;">A propos de <br/> Players2be</h1>
+        <div id="bio" style="text-align: left; font-size: 1.2em; width: 80%; padding-bottom: 20px; ">
+            Players2be est une plateforme de mise en relation entre les joueurs
+            et les recruteurs de clubs. Players2be reconnu en France , depuis son ouverture en 2018.
+            Peu importe l'endroit où vous vous trouver dans le monde, notre réseau nous permet d'être proche de vous et
+            d'envoyer un recruteur vous observer et prendre contact avec vous.
+            Vous rêvez du PSG, du Réal Madrid ou encore de Manchester United, postez vos vidéos sur Facebook, Instagram
+            ou Youtube,
+            remplissez le formulaire en bas de page et nous nous occupons du reste.
+            <p>Tentez de faire votre vie un rêve !</p>
+        </div>
+        <span data-aos="zoom-out" id="fr-button" class="translate--button" onclick="tradAbout('fr')">FR</span>
+        <span data-aos="zoom-out" id="en-button" class="translate--button" onclick="tradAbout('en')">EN</span>
+    </div>
+</div>
 
-    <div class="try">
-        <div class="container">
-            <div style="font-size: 2.5em; font-weight: bold; color: white; width: 35%; text-align: center; margin-top: 10%; margin-left: auto; margin-right: auto;">Tentez votre chance pour 9.99€</div>
-            <div style="font-size: 1.2em; margin-top: 15px; color: white; text-align: center; margin-left: auto; margin-right: auto;">Believe in yourself and try for 9.99€</div>
+<div class="try">
+    <div class="container">
+        <div style="font-size: 2.5em; font-weight: bold; cursor: pointer; color: white; width: 35%; text-align: center; margin-top: 10%; margin-left: auto; margin-right: auto;"
+             class="no-select" data-aos-duration="850" data-aos="flip-up" datas-aos-once="true">Tentez votre chance pour
+            9.99€
+        </div>
+        <div style="font-size: 1.2em; margin-top: 15px; cursor: pointer; color: white; text-align: center; margin-left: auto; margin-right: auto;"
+             class="no-select" data-aos="fade-down" data-aos-delay="945" data-aos-duration="800">Believe in yourself and
+            try for 9.99€
         </div>
     </div>
+</div>
 
 <div class="container">
     <div style="font-size: 2em; color: #101D33; font-weight: bolder; text-align: center;">Nous contacter</div>
-    <div style="font-size: 1em; color: #101D33; font-weight: lighter; margin-top: 10px; text-align: center;">contact@players2be.com</div>
+    <div style="font-size: 1em; color: #101D33; font-weight: lighter; margin-top: 10px; text-align: center;">
+        contact@players2be.com
+    </div>
 </div>
 
-    <div class="where">
-        <div class="container"></div>
-    </div>
+<div class="where">
+    <div class="container"></div>
+</div>
+
+<footer>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="assets/js/master.js"></script>
 
 </body>
 </html>
