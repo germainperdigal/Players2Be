@@ -1,18 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
 }
+
+/*
+################################
+               HEADING
+################################
+*/
 
 .jumbotron {
-    height: 97%;
+    height: 120%;
     width: 100%;
-    background: red;
+    background-image: url('assets/img/jumbotron.png');
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.jumbotron .logo {
+    height: 56px;
+    width: 549px;
+    left: calc(50% - calc(549px/2));
+    position: absolute;
+    top: calc(35% - 28px);
+    background: url('assets/img/logo.png');
+    background-size: 100% 100%;
 }
 
 
+header {
+    width: 1080px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.logo {
-    background: yellow;
-    height: 100%;
+header .log {
+    position: absolute;
+    top: 16px;
+    left: 5%;
+    height: 46px;
+    width: 20%;
+    float: left;
+    background-image: url('assets/img/log.png');
+    background-position: center;
+    background-size: 76px 46px;
+    background-repeat: no-repeat;
+}
+
+.nav ul {
+    width: 75%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    float: right;
+    list-style-type: none;
+}
+
+.nav li {
+    text-transform: uppercase;
+    font-weight: bold;
+    width: calc(75%/5);
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    color: white;
+    text-align: center;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:nth-child(5) {
+    color: #75B84E;
+}
+
+.nav li:nth-child(4) {
+    border-right: 1px solid #75B84E;
+    height: 20px;
+    line-height: 20px;
+}
+
+.jumbotron .catchphrase {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: calc(35% + 65px);
+    text-align: center;
+}
+
+.center {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron .tryit {
+    background-color: #75B84E;
+    border-color: #75B84E;
+    color: white;
+    width: 200px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 10px;
+    position: absolute;
+    top: calc(35% + 125px);
+}
+
+/*
+################################
+               ABOUT
+################################
+*/
+
+.illustration {
+    width: 95%;
+    margin-top: 20px;
+    height: 510px;
+    background-image: url('assets/img/illu.png');
+    background-size: 100% 100%;
+}
+
+/*
+################################
+         TRYING SECTION
+################################
+*/
+
+.try {
+    width: 100%;
+    height: 110%;
+    background-image: url('assets/img/medium.png');
+    background-position: center;
+    margin-top: 20px;
+    background-size: 100% 100%;
+}
+
+/*
+################################
+           MAP SECTION
+################################
+*/
+
+.where {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url('assets/img/map.png');
+    background-size: 100% 100%;
+}
+
+/*
+################################
+               FOOTER
+################################
+*/
+
+footer {
+    height: 250px;
+    width: 100%;
+    background-color: #101D33;
+}
+
+/*
+################################
+            ANIMATIONS
+################################
+*/
+
+
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
