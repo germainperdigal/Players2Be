@@ -24,13 +24,12 @@ html, body {
 .jumbotron .logo {
     height: 56px;
     width: 549px;
-    left: calc(50% - calc(549px/2));
+    left: calc(50% - calc(549px / 2));
     position: absolute;
     top: calc(35% - 28px);
     background: url('../img/logo.png');
     background-size: 100% 100%;
 }
-
 
 header {
     width: 1080px;
@@ -65,11 +64,10 @@ header .log {
 .nav li {
     text-transform: uppercase;
     font-weight: bold;
-    width: calc(75%/5);
+    width: calc(75% / 5);
     display: inline-block;
     height: 75px;
     line-height: 75px;
-    color: white;
     text-align: center;
 }
 
@@ -78,7 +76,7 @@ header .log {
     text-decoration: none;
 }
 
-.nav ul li a:nth-child(5) {
+.nav ul li .sign-up {
     color: #75B84E;
 }
 
@@ -105,7 +103,6 @@ header .log {
     background-size: 100% 100%;
     position: absolute;
     top: calc(88% - 20px);
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
 
 .jumbotron .more--icon {
@@ -115,6 +112,7 @@ header .log {
     background-size: 100% 100%;
     position: absolute;
     top: calc(95% - 12.5px);
+    animation: moveDown 1.75s infinite;
 }
 
 .center {
@@ -126,15 +124,19 @@ header .log {
 
 .jumbotron .tryit {
     background-color: #75B84E;
-    border-color: #75B84E;
     color: white;
     width: 200px;
     font-weight: bold;
     height: 50px;
     line-height: 45px;
     border-radius: 10px;
+    border: 0;
     position: absolute;
     top: calc(35% + 125px);
+}
+
+.jumbotron .tryit:hover {
+    background-color: #56973c;
 }
 
 /*
@@ -162,9 +164,33 @@ header .log {
     border-radius: 5px;
 }
 
+.about {
+    text-align: left;
+}
+
+.about::after {
+    content: "";
+    display: block;
+    width: 15%;
+    margin-top: 15px;
+    border-bottom: 1.5px solid #75B84E; /* This creates the border. Replace black with whatever color you want. */
+}
+
 .translate--button--active {
     background-color: #75B84E;
     color: white;
+}
+
+form {
+    margin-top: 30px;
+}
+
+form input {
+    height: 25px;
+    width: 98%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 /*
@@ -247,22 +273,20 @@ footer {
 ################################
 */
 
-
-
-@keyframes shake {
+@keyframes moveDown {
     10%, 90% {
-        transform: translate3d(-1px, 0, 0);
+        transform: translate3d(0, -1px, 0);
     }
 
     20%, 80% {
-        transform: translate3d(2px, 0, 0);
+        transform: translate3d(0, 2px, 0);
     }
 
     30%, 50%, 70% {
-        transform: translate3d(-4px, 0, 0);
+        transform: translate3d(0, -4px, 0);
     }
 
     40%, 60% {
-        transform: translate3d(4px, 0, 0);
+        transform: translate3d(0, 4px, 0);
     }
 }
