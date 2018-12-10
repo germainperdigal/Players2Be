@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="assets/styles/grid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/custom-download.css">
 </head>
 <body>
 
-<div class="jumbotron">
+<button onclick="topFunction()" class="scrollTop" id="scrollTop" title="Remonter"><i class="fas fa-arrow-up"></i></button>
+
+<div class="jumbotron home">
     <header>
         <div class="log"></div>
         <div class="nav">
@@ -34,11 +37,11 @@
 </div>
 
 <div class="container">
-    <div class="col-40 left">
+    <div class="col-40 left" id="about">
         <div class="illustration" data-aos="fade-right" data-aos-offset="500" data-aos-once="true"
              data-aos-easing="ease-in-sine"></div>
     </div>
-    <div class="col-60 right" data-aos="fade-left" data-aos-offset="500" data-aos-mirror="false"
+    <div class="col-60 right" data-aos="fade-left" data-aos-offset="500" data-aos-once="true"
          data-aos-easing="ease-in-sine">
         <h1 class="about" id="aboutHead">A propos de <br/> Players2be</h1>
         <div id="bio" style="text-align: left; font-size: 1.2em; width: 80%; padding-bottom: 20px; ">
@@ -59,11 +62,11 @@
 <div class="try">
     <div class="container">
         <div style="font-size: 2.5em; font-weight: bold; cursor: pointer; color: white; width: 35%; text-align: center; margin-top: 10%; margin-left: auto; margin-right: auto;"
-             class="no-select" data-aos-duration="850" data-aos="flip-up" datas-aos-once="true">Tentez votre chance pour
+             class="no-select" id="services" data-aos-duration="850" data-aos="flip-up" datas-aos-once="true">Tentez votre chance pour
             9.99€
         </div>
         <div style="font-size: 1.2em; margin-top: 15px; cursor: pointer; color: white; text-align: center; margin-left: auto; margin-right: auto;"
-             class="no-select" data-aos="fade-down" data-aos-delay="945" data-aos-duration="800">Believe in yourself and
+             class="no-select" data-aos="fade-down" data-aos-delay="945" data-aos-duration="800" datas-aos-once="true">Believe in yourself and
             try for 9.99€
         </div>
         <div class="col-third" style="text-align: center; color: white; font-size: 1.1em; font-weight: bold; margin-top: 50px">
@@ -82,21 +85,45 @@
             <div style="font-size: 0.7em; padding-top: 15px; border-top: 1px solid white; width: 180px; margin-left: auto; margin-right: auto">Answer of the clubs</div>
         </div>
     </div>
-    </div>
+    <div class="more--icon center"></div>
+</div>
 
 <div class="container">
-    <div style="font-size: 2em; color: #101D33; font-weight: bolder; text-align: center;">Nous contacter</div>
-    <div style="font-size: 1em; color: #101D33; font-weight: lighter; margin-top: 10px; text-align: center;">
+    <div id="contact" style="font-size: 2em; color: #101D33; font-weight: bolder; text-align: center;">Nous contacter</div>
+    <div class="email" style="font-size: 1em; color: #101D33; font-weight: lighter; margin-top: 10px; text-align: center;">
         contact@players2be.com
     </div>
     <form action="">
-        <div class="col-50 left">
-            <input type="text" placeholder="Nom">
+        <div class="col-2form left">
+            <input type="text" placeholder="Nom" id="nom">
         </div>
-        <div class="col-50 right">
-            <input type="text" placeholder="Prénom">
+        <div class="col-2form right">
+            <input type="text" placeholder="Mail" id="mail">
         </div>
-        <input type="text">
+        <div class="col-100">
+            <input type="text" placeholder="Ville" id="ville">
+        </div>
+        <div class="col-2form left">
+            <input type="text" placeholder="Club actuel" id="club">
+        </div>
+        <div class="col-2form right">
+            <input type="text" placeholder="Poste" id="poste">
+        </div>
+        <div class="col-100">
+            <input type="text" placeholder="Clubs désirés (5 noms)" id="souhaits">
+        </div>
+        <div class="col-100">
+            <input type="text" placeholder="Lien page Facebook" id="facebook">
+        </div>
+        <div class="col-100">
+            <input type="text" placeholder="Lien chaine Youtube" id="ytb">
+        </div>
+        <div class="col-100">
+            <input type="text" placeholder="Lien compte Instagram" id="ig">
+        </div>
+        <div class="col-100 center">
+            <input type="submit" id="inscript--button" value="S'inscrire">
+        </div>
     </form>
 </div>
 
@@ -104,11 +131,14 @@
     <div class="container"></div>
 </div>
 
+
+
 <footer>
 
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/master.js"></script>
 
 </body>
