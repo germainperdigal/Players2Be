@@ -2,13 +2,7 @@ AOS.init();
 
 function tradAbout(lang) {
     if (lang == 'fr') {
-        document.getElementById("bio").innerHTML = "Players2be est une plateforme de mise en relation entre les joueurs@" +
-            "                et les recruteurs de clubs. Players2be reconnu en France , depuis son ouverture en 2018." +
-            "                Peu importe l'endroit où vous vous trouver dans le monde, notre réseau nous permet d'être proche de vous et" +
-            "                d'envoyer un recruteur vous observer et prendre contact avec vous." +
-            "                Vous rêvez du PSG, du Réal Madrid ou encore de Manchester United, postez vos vidéos sur Facebook, Instagram ou Youtube," +
-            "                remplissez le formulaire en bas de page et nous nous occupons du reste." +
-            "                <p>Tentez de faire votre vie un rêve !</p>";
+        document.getElementById("bio").innerHTML = "Players2be est une plateforme de mise en relation entre les joueurs et les recruteurs de clubs. Players2be reconnu en France , depuis son ouverture en 2018. Peu importe l'endroit où vous vous trouver dans le monde, notre réseau nous permet d'être proche de vous et d'envoyer un recruteur vous observer et prendre contact avec vous. Vous rêvez du PSG, du Réal Madrid ou encore de Manchester United, postez vos vidéos sur Facebook, Instagram ou Youtube, remplissez le formulaire en bas de page et nous nous occupons du reste. <p>Tentez de faire votre vie un rêve !</p>";
         document.getElementById("aboutHead").innerHTML = "A propos de <br /> Players2be";
         document.getElementById("fr-button").classList.add("translate--button--active");
         document.getElementById("en-button").classList.remove("translate--button--active");
@@ -38,7 +32,6 @@ function tradAbout(lang) {
     }
     return true;
 }
-
 
 window.onscroll = function () {
     scrollFunction()

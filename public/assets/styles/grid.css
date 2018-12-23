@@ -67,11 +67,14 @@
 }
 
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
     .col-40 {
         width: 100%;
     }
     .col-60 {
+        width: 100%;
+    }
+    .col-2form {
         width: 100%;
     }
 }

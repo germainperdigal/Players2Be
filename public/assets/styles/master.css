@@ -7,6 +7,16 @@ html, body {
     height: 100%;
 }
 
+@media (max-width: 768px) {
+    .jumbotron {
+        height: 70%;
+        width: 100%;
+    }
+    .scrollTop {
+        display: none;
+    }
+}
+
 /*
 ################################
                HEADING
@@ -23,7 +33,16 @@ html, body {
 
 .sub {
     height: 55%;
-    background-image: url('../img/sub--jumbotron.png');
+    background-image: url('../img/sign--jumbotron.png');
+}
+
+.sub .category-title {
+    font-size: 43px;
+}
+
+.blog {
+    height: 55%;
+    background-image: url('../img/blog--jumbotron.png');
 }
 
 .jumbotron .logo {
@@ -215,10 +234,9 @@ form input {
 
 .try {
     width: 100%;
-    height: 125%;
+    height: 100%;
     background-image: url('../img/try-bg.png');
     background-position: center;
-    margin-top: 20px;
     background-size: 100% 100%;
 }
 
@@ -246,6 +264,33 @@ form input {
     background-size: 100% 100%;
 }
 
+.payement {
+    height: 400px;
+    text-align: center;
+    width: 100%;
+    background-image: url('../img/grey--sub.png');
+    background-size: 100% 100%;
+    color: #101d33;
+}
+
+.method img {
+    height: 70px;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.payement_label {
+    font-size: 1.3em;
+    width: auto;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+.payement_label span {
+    display: block;
+    font-weight: lighter;
+}
+
 /*
 ################################
            MAP SECTION
@@ -268,8 +313,19 @@ form input {
 */
 
 footer {
+    background-color: #122034;
+    height: 120px;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.light {
+    background-image: url('../img/footer.png');
+    background-size: 101% 100%;
+    background-color: #f0f0f0;
     height: 250px;
     width: 100%;
+    background-position: center;
 }
 
 .no-select {
@@ -311,19 +367,90 @@ form input[type=submit] {
     z-index: 10000;
     border: none;
     outline: none;
-    background-color: #101d33;
+    background-color: #75b84e;
     width: 50px;
     height: 50px;
-    line-height: 25px;
+    line-height: 10px;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 18px;
+    border-radius: 10%;
+    border: 1.5px solid white;
+    font-size: 2em;
 }
 
 .scrollTop:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #588e35;
+}
+
+.price {
+    color: #101d33;
+    font-size: 4em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.conditions {
+    color: #101d33;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.legal ul {
+    height: 350px;
+}
+
+.legal ul li {
+    height: 70px;
+    display : list-item;
+}
+
+.feed .container .lead-image {
+    float: left;
+    padding-top: 56.25%;
+    margin-left: 5%;
+    width: 40%;
+    background-image: url('../img/article-image.png');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.feed .container .content {
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+    font-size: 1.1em;
+}
+
+.content .article-title {
+    color: #101d33;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.content .article-meta {
+    color: #75B84E;
+    margin: 5px 0 5px 0;
+}
+
+.content .article-atrouver {
+    color: #101d33;
+    line-height: 20px;
+}
+
+.feed .container:nth-child(2n) .lead-image {
+    float: right;
+    color: blue;
+    margin-right: 5%;
+}
+
+.translate {
+    padding-top: 20px;
+}
+
+.feed .container:nth-child(2n) .content {
+    float: left;
+    margin-left: 5%;
+    margin-right: 0;
 }
 
 /*
