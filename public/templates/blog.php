@@ -45,7 +45,7 @@
          {% endfor %}
 
 </div>
-<footer class="lite">
+<footer class="light brighter">
 </footer>
 
 

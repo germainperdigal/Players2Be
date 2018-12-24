@@ -273,6 +273,12 @@ form input {
     color: #101d33;
 }
 
+.methods_list {
+    border-right: 1px solid #0f1d34;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
 .method img {
     height: 70px;
     width: 60%;
@@ -382,9 +388,14 @@ form input[type=submit] {
     background-color: #588e35;
 }
 
+.sign-category {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .price {
     color: #101d33;
-    font-size: 4em;
+    font-size: 4.5em;
     text-align: center;
     font-weight: bolder;
 }
@@ -397,11 +408,18 @@ form input[type=submit] {
 
 .legal ul {
     height: 350px;
+    border-left: 1px solid #75b84e;
 }
 
 .legal ul li {
     height: 70px;
-    display : list-item;
+}
+
+.legal li::before {
+    content: "- ";
+    color: #75B84E;
+    padding-right: 10px;
+    font-weight: bolder;
 }
 
 .feed .container .lead-image {
@@ -451,6 +469,10 @@ form input[type=submit] {
     float: left;
     margin-left: 5%;
     margin-right: 0;
+}
+
+.brighter {
+    background-color: white;
 }
 
 /*
