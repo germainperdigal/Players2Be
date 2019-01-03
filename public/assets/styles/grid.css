@@ -67,7 +67,35 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 946px) {
+
+    header {
+        width: 100%;
+    }
+
+    .jumbotron .logo {
+        height: 56px;
+        width: 65%;
+        left: calc(50% - calc(65% / 2));
+        position: absolute;
+        top: calc(35% - 28px);
+        background: url('../img/logo.png');
+        background-size: 100% 100%;
+    }
+
+    .try {
+        height: 150%;
+    }
+
+    .about-content {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .illustration {
+        display: none;
+    }
 
     .container {
         width: 97%;
