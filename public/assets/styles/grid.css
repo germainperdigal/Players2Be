@@ -8,6 +8,10 @@
     overflow: auto;
 }
 
+footer .container {
+    padding: 0;
+}
+
 .col-10 {
     width: 10%;
 }
@@ -17,6 +21,10 @@
 }
 
 .col-30 {
+    width: 30%;
+}
+
+.col-30-only {
     width: 30%;
 }
 
@@ -36,6 +44,14 @@
     display: inline-block;
 }
 
+.col-third-only {
+    height: 100px;
+    width: calc(calc(100% - 9px)/3);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
 .col-2form {
     width: 49%;
     margin-left: auto;
@@ -47,6 +63,10 @@
 }
 
 .col-70 {
+    width: 70%;
+}
+
+.col-70-only {
     width: 70%;
 }
 
@@ -84,7 +104,8 @@
     }
 
     .try {
-        height: 150%;
+        height: auto;
+        background-size: 150% 100%;
     }
 
     .about-content {
@@ -98,7 +119,7 @@
     }
 
     .container {
-        width: 97%;
+        width: 95%;
     }
 
     .nav {

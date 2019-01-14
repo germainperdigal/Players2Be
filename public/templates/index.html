@@ -12,9 +12,24 @@
 </head>
 <body>
 
+<div class="bg-cover" id="#cover"></div>
 <button onclick="topFunction()" class="scrollTop" id="scrollTop" title="Remonter"><i class="fas fa-angle-up"></i></button>
 
 <div class="jumbotron home">
+    <div class="mobile">
+        <a class="hamburger-shell">
+            <div class="hamb top"></div>
+            <div class="hamb middle"></div>
+            <div class="menu-name">MENU</div>
+            <ul id="menu">
+                <a href="#"> <li>À propos</li></a>
+                <a href="#"> <li>Services</li></a>
+                <a href="#"> <li>Contact</li></a>
+                <a href="#"> <li>Blog</li></a>
+                <a href="#"> <li>S'inscrire</li></a>
+            </ul>
+        </a>
+    </div>
     <header>
         <div class="log"></div>
         <div class="nav">
@@ -45,7 +60,7 @@
     <div class="col-60 about-content right" data-aos="fade-left" data-aos-offset="500" data-aos-once="true"
          data-aos-easing="ease-in-sine">
         <h1 class="about" id="aboutHead">A propos de <br/> Players2be</h1>
-        <div id="bio" style="text-align: left; font-size: 1.2em; width: 80%; padding-bottom: 20px; ">
+        <div id="bio" class="bio">
             Players2be est une plateforme de mise en relation entre les joueurs
             et les recruteurs de clubs. Players2be reconnu en France , depuis son ouverture en 2018.
             Peu importe l'endroit où vous vous trouver dans le monde, notre réseau nous permet d'être proche de vous et
@@ -62,26 +77,26 @@
 
 <div class="try">
     <div class="container">
-        <div style="font-size: 2.5em; font-weight: bold; cursor: pointer; color: white; width: 35%; text-align: center; margin-top: 5%; margin-left: auto; margin-right: auto;"
+        <div style="font-size: 2.5em; font-weight: bold; cursor: pointer; color: white; width: 35%; text-align: center; margin-left: auto; margin-right: auto;"
              class="no-select" id="services" data-aos-duration="850" data-aos="flip-up" datas-aos-once="true">Tentez votre chance pour
             9.99€
         </div>
-        <div style="font-size: 1.2em; margin-top: 15px; cursor: pointer; color: white; text-align: center; margin-left: auto; margin-right: auto;"
+        <div style="font-size: 1em; margin-top: 15px; cursor: pointer; color: white; text-align: center; margin-left: auto; margin-right: auto;"
              class="no-select" data-aos="fade-down" data-aos-delay="945" data-aos-duration="800" datas-aos-once="true">Believe in yourself and
             try for 9.99€
         </div>
-        <div class="col-third" style="text-align: center; color: white; font-size: 1.1em; font-weight: bold; margin-top: 50px">
-            <i style="font-size: 5.5rem; color: white; display: block;" class="fas fa-clipboard-check"></i>
+        <div class="col-third" style="text-align: center; height: auto; color: white; font-size: 1.1em; font-weight: bold; margin-top: 50px">
+            <i style="font-size: 5.5rem; color: #75B84E; display: block;" class="fas fa-clipboard-check"></i>
             <div style="width: 150px; margin-left: auto; margin-right: auto; margin-top: 15px; padding-bottom: 15px;">REMPLISSEZ LE FORMULAIRE</div>
             <div style="font-size: 0.7em; padding-top: 15px; border-top: 1px solid white; width: 150px; margin-left: auto; margin-right: auto">Complete the form</div>
         </div>
-        <div class="col-third" style="text-align: center; color: white; font-size: 1.1em; font-weight: bold; margin-top: 50px">
-            <i style="font-size: 5.5rem; color: white; display: block;" class="fab fa-telegram-plane"></i>
+        <div class="col-third" style="text-align: center; height: auto; color: white; font-size: 1.1em; font-weight: bold; margin-top: 50px">
+            <i style="font-size: 5.5rem; color: #75B84E; display: block;" class="fab fa-telegram-plane"></i>
             <div style="width: 300px; margin-left: auto; margin-right: auto; margin-top: 15px; padding-bottom: 15px;">ENVOI DE VOTRE PROFIL A NOS RECRUTEURS</div>
             <div style="font-size: 0.7em; padding-top: 15px; border-top: 1px solid white; width: 200px; margin-left: auto; margin-right: auto">Sending of your profile to our recruiters</div>
         </div>
-        <div class="col-third" style="text-align: center; color: white; font-size: 1.1em; font-weight: bold; margin-top: 50px">
-            <i style="font-size: 5.5rem; color: white; display: block;" class="fas fa-users"></i>
+        <div class="col-third" style="text-align: center;height: auto; color: white; font-size: 1.1em; font-weight: bold; margin-top: 50px">
+            <i style="font-size: 5.5rem; color: #75B84E; display: block;" class="fas fa-users"></i>
             <div style="width: 150px; margin-left: auto; margin-right: auto; margin-top: 15px; margin-bottom: 15px;">REPONSE DES CLUBS</div>
             <div style="font-size: 0.7em; padding-top: 15px; border-top: 1px solid white; width: 180px; margin-left: auto; margin-right: auto">Answer of the clubs</div>
         </div>
@@ -129,7 +144,13 @@
 </div>
 
 <div class="where">
-    <div class="container"></div>
+    <div class="container">
+        <div class="col-100">
+            <i class="fab fa-twitter-square social"></i>
+            <i class="fab fa-instagram social"></i>
+            <i class="fab fa-facebook-square social"></i>
+        </div>
+    </div>
 </div>
 
 
@@ -137,17 +158,17 @@
 <footer>
 
     <div class="container">
-        <div class="col-30 left">
+        <div class="col-30-only left">
             <div class="logo"></div>
         </div>
-        <div class="col-70 right footer">Copyright 2018 PLAYERS2BE - Tous Droits Réservés - Mentions légales - CGV</div>
+        <div class="col-70-only right footer">Copyright 2018 PLAYERS2BE - Tous Droits Réservés - Mentions légales - CGV</div>
     </div>
 
 </footer>
 
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../assets/js/master.js"></script>
-
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Players 2 Be - Notre blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles/master.css">
     <link rel="stylesheet" href="../assets/styles/grid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -45,7 +46,13 @@
          {% endfor %}
 
 </div>
-<footer class="light brighter">
+<footer id="blue" class="light brighter">
+    <div class="container">
+        <div class="col-30 left">
+            <div class="logo"></div>
+        </div>
+        <div class="col-70 right footer">Copyright 2018 PLAYERS2BE - Tous Droits Réservés - Mentions légales - CGV</div>
+    </div>
 </footer>
 
 
