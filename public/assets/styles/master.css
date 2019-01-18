@@ -20,9 +20,15 @@
         padding-bottom: 15px;
     }
     .light {
-        background-size: 150% 100% !important;
+        background-size: 180% 100% !important;
         background-color: #f0f0f0;
+        height: 180px !important;
     }
+
+    footer {
+        height: 180px !important;
+    }
+
     .method img {
         height: 40px;
         width: 30%;
@@ -69,8 +75,8 @@
     }
 
     footer .footer {
-        margin-top: 45px !important;
         text-align: center;
+        margin-top: 0 !important;
         margin-left: -10% !important;
     }
 
@@ -121,8 +127,21 @@
         font-size: 1.1em;
     }
 
+    footer .social {
+        margin-top: -50px !important;
+    }
+
+    .box {
+        margin-top: 40px !important;
+    }
+
     footer .footer {
         margin-left: -10% !important;
+        margin-top: 30px !important;
+    }
+
+    footer .bottom {
+        top: 0 !important;
     }
 
 }
@@ -252,7 +271,7 @@ header .log {
     position: absolute;
     width: 62px;
     height: 5px;
-    background-color: white;
+    background-color: #75B84E;
     transition: all 350ms ease-in-out;
     top: 20px;
 }
@@ -264,7 +283,7 @@ header .log {
 .menu-name {
     font-family: Verdana;
     font-weight: 900;
-    color: white;
+    color: #75B84E;
     font-size: 15.5px;
     text-decoration: none;
     position: absolute;
@@ -274,7 +293,7 @@ header .log {
 }
 #menu {
     position: fixed;
-    left: calc(100% - 340px);
+    left: calc(100% - 300px);
     top: 10px;
     color: black;
     margin: 120px 30px;
@@ -589,7 +608,7 @@ form input {
     bottom: -85px;
 }
 
-.where .container .social {
+.social {
     width: 10%;
     color: #75B84E;
     font-size: 2em;
@@ -613,26 +632,27 @@ footer .logo {
     width: 20%;
     margin-left: calc(50% - calc(20% / 2));
     float: left;
-    margin-top: 60px;
     background-image: url('../img/nav-logo.png');
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-#blue .logo {
-    margin-top: 50%;
-}
-
-#blue .footer {
-    margin-top: 17%;
-}
-
 footer .footer {
-    text-align: center;
+    text-align: left;
+    margin-top: 20px;
     color: white;
     text-transform: uppercase;
-    margin-top: 70px;
+}
+
+footer .bottom {
+    top: 70px;
+    position: relative;
+}
+
+footer .footer a {
+    text-decoration: none;
+    color: white;
 }
 
 .light {
@@ -642,6 +662,10 @@ footer .footer {
     height: 250px;
     width: 100%;
     background-position: center;
+}
+
+.light .social {
+    padding-top: 80px;
 }
 
 .no-select {

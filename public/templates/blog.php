@@ -48,12 +48,20 @@
 </div>
 <footer id="blue" class="light brighter">
     <div class="container">
-        <div class="col-30 left">
+        <div class="col-100 center">
+            <a href="https://www.instagram.com/actuplayers/"><i class="fab fa-twitter-square social"></i></a>
+            <a href="https://www.facebook.com/Players2be-1840625799346465/"><i class="fab fa-instagram social"></i></a>
+            <a href="https://www.facebook.com/Players2be-1840625799346465/"><i class="fab fa-facebook-square social"></i></a>
+        </div>
+    </div>
+    <div class="container bottom">
+        <div class="col-30-only left box">
             <div class="logo"></div>
         </div>
-        <div class="col-70 right footer">Copyright 2018 PLAYERS2BE - Tous Droits Réservés - Mentions légales - CGV</div>
+        <div class="col-70-only right footer">Copyright 2018 PLAYERS2BE - Tous Droits Réservés - <a href="/legal">Mentions légales</a> - <a href="/conditions">CGV</a></div>
     </div>
 </footer>
+
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
